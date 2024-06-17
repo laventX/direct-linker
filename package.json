@@ -6,9 +6,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,css}\" \"./**/*.html\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,css}\" \"./**/*.html\"",
+    "deploy": "npm run build && gh-pages -d \"./dist\""
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "prettier": "3.3.2",
     "typescript": "5.4.5",
     "vite": "5.3.1"
