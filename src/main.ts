@@ -1,4 +1,4 @@
-import "./style.css";
+import './style.css';
 import {
   getDropboxDirectLink,
   getDropbox2DirectLink,
@@ -6,34 +6,34 @@ import {
   hasRightHostname,
   isCorrectDropboxLink,
   isCorrectDropbox2Link,
-  isCorrectGoogleDriveLink,
-} from "./parse.js";
+  isCorrectGoogleDriveLink
+} from './parse.js';
 
 const outputLinkNode: HTMLAnchorElement | null =
-  document.querySelector(".output__link");
+  document.querySelector('.output__link');
 
-const DEFAULT_OUTPUT_LINK = "https://github.com/laventx/direct-linker";
+const DEFAULT_OUTPUT_LINK = 'https://github.com/laventx/direct-linker';
 
 let outputLink = DEFAULT_OUTPUT_LINK;
 
 const currentLink = new URL(window.location.href);
 
-const inputLink = new URL(currentLink.searchParams.get("link") || currentLink);
+const inputLink = new URL(currentLink.searchParams.get('link') || currentLink);
 
 const updateOutputLink = (link: URL) => {
   // Dropbox (/s/)
-  if (hasRightHostname(link, "dropbox.com") && isCorrectDropboxLink(link)) {
+  if (hasRightHostname(link, 'dropbox.com') && isCorrectDropboxLink(link)) {
     outputLink = getDropboxDirectLink(link);
   }
 
   // Dropbox (/scl/fi/)
-  if (hasRightHostname(link, "dropbox.com") && isCorrectDropbox2Link(link)) {
+  if (hasRightHostname(link, 'dropbox.com') && isCorrectDropbox2Link(link)) {
     outputLink = getDropbox2DirectLink(link);
   }
 
   // Google Drive
   if (
-    hasRightHostname(link, "drive.google.com") &&
+    hasRightHostname(link, 'drive.google.com') &&
     isCorrectGoogleDriveLink(link)
   ) {
     outputLink = getGoogleDriveDirectLink(link);
