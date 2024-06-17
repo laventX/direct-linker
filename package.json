@@ -1,6 +1,7 @@
 {
   "name": "direct-linker",
   "private": true,
+  "license": "WTFPL",
   "type": "module",
   "scripts": {
     "dev": "vite",
