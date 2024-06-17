@@ -4,13 +4,13 @@
 
 ## Поддерживаемые сервисы
 
-### • [Dropbox](https://www.dropbox.com/)
+### Dropbox
 
 Примеры ссылок:
 - [`https://www.dropbox.com/scl/fi/50510hmot7b55bsvx3xjd/direct-linker-example.jpg?rlkey=e7n92tvfgnzj95awppx0g4ycp&st=f48ecm2d&dl=0`](https://www.dropbox.com/scl/fi/50510hmot7b55bsvx3xjd/direct-linker-example.jpg?rlkey=e7n92tvfgnzj95awppx0g4ycp&st=f48ecm2d&dl=0)
 - [`https://www.dropbox.com/s/9znp3i1s6dz3zii/photo.jpg?dl=0`](https://www.dropbox.com/s/9znp3i1s6dz3zii/photo.jpg?dl=0)
 
-### • [Google Drive](https://drive.google.com/)
+### Google Drive
 
 Примеры ссылок:
 
